@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="bn"><link rel="manifest" href="./manifest.json">
+
+<meta name="theme-color" content="#">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
@@ -2614,6 +2616,12 @@ window.addEventListener("load",requestJawraWakeLock);
 
 loadHomeVideos();
 
-</script>
+</script><script>
+
+f("service Worker" in navigator) {
+
+window.addEventListener("load", function(){ navigator.serviceWorker.register("./sw.js");
+
+});
       </body>
     </html>
